@@ -9,7 +9,7 @@ const initialState = {
 
 export type AuthState = Readonly<typeof initialState>;
 
-export default (state: AuthState = initialState, action): AuthState => {
+export default (state: AuthState = initialState, action: any): AuthState => {
 
     return state;
 };

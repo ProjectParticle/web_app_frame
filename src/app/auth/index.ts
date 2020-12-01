@@ -1,0 +1,7 @@
+/**
+ * Auth app
+ */
+
+export default {
+    
+}
