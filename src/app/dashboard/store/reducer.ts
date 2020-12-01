@@ -9,7 +9,7 @@ const initialState = {
 
 export type DashboardState = Readonly<typeof initialState>;
 
-export default (state: DashboardState = initialState, action): DashboardState => {
+export default (state: DashboardState = initialState, action: any): DashboardState => {
 
     return state;
 };
