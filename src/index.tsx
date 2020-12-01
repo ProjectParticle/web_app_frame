@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 
 /* Application-level modules */
-import Frame from './Frame';
+import { createApplicationStore } from './store';
 import reportWebVitals from './reportWebVitals';
+
+/* Application-level components */
+import Main from './main';
+
+// prepare application store
+const applicationStore = createApplicationStore();
 
 ReactDOM.render(
   <React.StrictMode>
-    <Frame />
+    <Provider store={applicationStore}>
+      <Main />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
